@@ -1,0 +1,25 @@
+{
+  "name": "servidor_express",
+  "version": "1.0.0",
+  "description": "servidor http express com docker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "nodemon": "nodemon index.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cabelow/servidor_express.git"
+  },
+  "author": "Rafael Mello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cabelow/servidor_express/issues"
+  },
+  "homepage": "https://github.com/cabelow/servidor_express#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
