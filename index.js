@@ -1,11 +1,12 @@
-var http = require('http')
-var porta = process.env.PORT_APP || 21144
- 
- 
-http.createServer((req, res) => {
-  res.writeHead(200, {'Content-Type': 'text/plain'})
-  res.end('Hello Node')
-}).listen(porta)
- 
- 
-console.log('Servidor rodando na porta: '+ porta)
+const express = require('express')
+
+const PORT = 21144
+const HOST = '0.0.0.0'
+
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send('Servidor para o projeto, testado e aprovado !')
+})
+
+app.listen(PORT, HOST)
