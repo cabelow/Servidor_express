@@ -1,12 +1,12 @@
 const express = require('express')
 
 const PORT = 21144
-const HOST = '0.0.0.0'
 
 const app = express();
 
 app.get('/', (req, res) => {
+    console.log("Servidor para o projeto, testado e aprovado !")
     res.send('Servidor para o projeto, testado e aprovado !')
 })
 
-app.listen(PORT, HOST)
+app.listen(PORT)
