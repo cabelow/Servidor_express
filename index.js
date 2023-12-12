@@ -1,12 +1,11 @@
-const express = require('express')
+const express = require('express');
+const routes  =  require('./src/routes.js');
 
-const PORT = 21144
+const PORT = 21144;
 
 const app = express();
 
-app.get('/', (req, res) => {
-    console.log("Servidor para o projeto, testado e aprovado !")
-    res.send('Servidor para o projeto, testado e aprovado !')
-})
+app.use(express.json());
+app.use(routes);
 
 app.listen(PORT)
